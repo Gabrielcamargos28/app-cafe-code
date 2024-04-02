@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
+import BtnVoltar from '../../components/botaoVoltar';
 
 
 export default function Resultado({ route }) {
@@ -41,7 +42,9 @@ export default function Resultado({ route }) {
         <View style={styles.container}>
             <Text style={styles.containerText}>Resultado da regressão para o ano {anoSelecionado}: R$ {resultadoRegressao}</Text>
             <Text style={styles.containerText}>Eficacia do algoritmo de <Text style={styles.red}>87%</Text></Text>
+            <BtnVoltar />
         </View >
+
     );
 }
 

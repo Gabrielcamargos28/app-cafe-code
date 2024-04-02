@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, FlatList, Image, Text, StyleSheet, Dimensions } from 'react-native';
+import BtnVoltar from './botaoVoltar';
 
 const { width } = Dimensions.get('window')
 
@@ -18,6 +19,7 @@ export default function ListaComImagens({ data }) {
                 keyExtractor={item => item.id}
                 contentContainerStyle={styles.flatListContent}
             />
+            <BtnVoltar />
         </View>
     );
 }

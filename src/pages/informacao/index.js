@@ -6,7 +6,10 @@ export default function Informacao() {
 
         <View style={styles.container}>
 
-            <Text style={styles.titulo}>Informacoes</Text>
+            <Text style={styles.titulo}>Inforrmacoes</Text>
+            <Text>A base de dados tem como intensão prever o preço médio do café em determinado ano inserido.</Text>
+            <Text>Base de dados: https://portalweb.cooxupe.com.br:9080/portal/precohistoricocafe_2.jsp</Text>
+            <Text>Foi usado a ferramenta Knime para o tratamento de dados e realização de cálculos</Text>
             <Image style={styles.imageBottomRight} source={require('../../imagens/logoIf.png')}></Image>
         </View>
     )

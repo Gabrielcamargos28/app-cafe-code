@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { Picker } from '@react-native-picker/picker'
 import { useNavigation } from '@react-navigation/native'
+import BtnVoltar from '../../components/botaoVoltar';
 export default function Previsao() {
 
     const [anoSelecionado, setAnoSelecionado] = useState('2023');
@@ -34,6 +35,7 @@ export default function Previsao() {
                     </TouchableOpacity>
                 </View>
             </View>
+            <BtnVoltar />
         </View >
     )
 }
